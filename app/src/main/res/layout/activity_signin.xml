@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
-    tools:context="com.example.kisanthapa.connect.SigninActivity">
+    android:background="@drawable/login_background">
 
     <Button
         android:id="@+id/start_reg_btn"
@@ -19,7 +18,7 @@
         android:text="Register"
         tools:ignore="HardcodedText" />
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/start_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,16 +26,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="180dp">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
             android:hint="@string/email"
             android:inputType="textEmailAddress" />
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/start_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,7 +44,7 @@
         android:layout_marginTop="12dp"
         app:passwordToggleEnabled="true">
 
-        <android.support.design.widget.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,7 +52,7 @@
             android:layout_marginStart="20dp"
             android:hint="@string/password"
             android:inputType="textPassword" />
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/start_Signin_btn"
